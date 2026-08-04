@@ -1,0 +1,14 @@
+# Terraform state
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# Local plans and crash logs
+*.tfplan
+tfplan
+crash.log
+crash.*.log
+
+# Sensitive local variables
+terraform.tfvars
+*.auto.tfvars
