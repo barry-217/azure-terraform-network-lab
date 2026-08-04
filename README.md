@@ -16,14 +16,18 @@ A hands-on Infrastructure as Code project built with Terraform and Microsoft Azu
 
 ## Architecture
 
+## Architecture
+
+```text
 Resource Group
 └── Virtual Network: 10.10.0.0/16
     ├── Application Subnet: 10.10.1.0/24
     │   └── Application NSG
     └── Management Subnet: 10.10.2.0/24
         └── Management NSG
+```
 
-        ```mermaid
+```mermaid
 flowchart TD
     RG[Resource Group]
     VNET[Virtual Network: 10.10.0.0/16]
@@ -39,6 +43,7 @@ flowchart TD
     APP --> APPNSG
     MGMT --> MGMTNSG
     MGMTNSG --> DENY
+```
 
 ## Tools Used
 
