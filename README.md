@@ -10,6 +10,8 @@ A hands-on Infrastructure as Code project built with Terraform and Microsoft Azu
 - Network Security Group (NSG)
 - NSG association with the application subnet
 - Management Subnet
+- Application Network Security Group (NSG)
+- Management Network Security Group (NSG)
 
 ## Architecture
 
@@ -17,11 +19,13 @@ A hands-on Infrastructure as Code project built with Terraform and Microsoft Azu
 Resource Group
 └── Virtual Network: 10.10.0.0/16
     ├── Application Subnet: 10.10.1.0/24
-    │   └── Network Security Group
+    │   └── Application NSG
     └── Management Subnet: 10.10.2.0/24
+        └── Management NSG
 
 ## Tools Used
 
+```text
 Terraform
 Microsoft Azure
 Azure CLI
