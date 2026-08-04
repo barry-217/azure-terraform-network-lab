@@ -12,6 +12,7 @@ A hands-on Infrastructure as Code project built with Terraform and Microsoft Azu
 - Management Subnet
 - Application Network Security Group (NSG)
 - Management Network Security Group (NSG)
+- Explicit Deny-All inbound rule for the management subnet
 
 ## Architecture
 
@@ -26,26 +27,28 @@ Resource Group
 ## Tools Used
 
 ```text
-Terraform
-Microsoft Azure
-Azure CLI
-Git
-GitHub
-Visual Studio Code
+- Terraform
+- Microsoft Azure
+- Azure CLI
+- Git
+- GitHub
+- Visual Studio Code
 
 ## How to Run
-terraform init
-terraform fmt
-terraform validate
-terraform plan
-terraform apply
+- terraform init
+- terraform fmt
+- terraform validate
+- terraform plan
+- terraform apply
 
 ## Verification
-terraform state list
-terraform output
+- terraform state list
+- terraform output
 
 ## Learning Outcomes
-Created Azure infrastructure using Terraform.
-Used Terraform state to track deployed resources.
-Used resource references to connect Azure resources.
-Published the project source code to GitHub using Git.
+- Created Azure infrastructure using Terraform.
+- Used Terraform state to track deployed resources.
+- Used resource references to connect Azure resources.
+- Published the project source code to GitHub using Git.
+- Created and applied an Azure NSG security rule using Terraform.
+- Learned that NSG rules are evaluated in priority order.
