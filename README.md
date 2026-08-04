@@ -16,7 +16,6 @@ A hands-on Infrastructure as Code project built with Terraform and Microsoft Azu
 
 ## Architecture
 
-```text
 Resource Group
 └── Virtual Network: 10.10.0.0/16
     ├── Application Subnet: 10.10.1.0/24
@@ -26,7 +25,6 @@ Resource Group
 
 ## Tools Used
 
-```text
 - Terraform
 - Microsoft Azure
 - Azure CLI
