@@ -23,6 +23,23 @@ Resource Group
     └── Management Subnet: 10.10.2.0/24
         └── Management NSG
 
+        ```mermaid
+flowchart TD
+    RG[Resource Group]
+    VNET[Virtual Network: 10.10.0.0/16]
+    APP[Application Subnet: 10.10.1.0/24]
+    APPNSG[Application NSG]
+    MGMT[Management Subnet: 10.10.2.0/24]
+    MGMTNSG[Management NSG]
+    DENY[Explicit Deny-All Inbound Rule]
+
+    RG --> VNET
+    VNET --> APP
+    VNET --> MGMT
+    APP --> APPNSG
+    MGMT --> MGMTNSG
+    MGMTNSG --> DENY
+
 ## Tools Used
 
 - Terraform
