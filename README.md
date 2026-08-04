@@ -16,8 +16,6 @@ A hands-on Infrastructure as Code project built with Terraform and Microsoft Azu
 
 ## Architecture
 
-## Architecture
-
 ```text
 Resource Group
 └── Virtual Network: 10.10.0.0/16
