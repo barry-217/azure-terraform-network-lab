@@ -13,3 +13,7 @@ output "application_subnet_id" {
 output "network_security_group_id" {
   value = azurerm_network_security_group.application.id
 }
+
+output "management_subnet_id" {
+  value = azurerm_subnet.management.id
+}

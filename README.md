@@ -9,32 +9,37 @@ A hands-on Infrastructure as Code project built with Terraform and Microsoft Azu
 - Application Subnet
 - Network Security Group (NSG)
 - NSG association with the application subnet
+- Management Subnet
 
 ## Architecture
 
 ```text
 Resource Group
 └── Virtual Network: 10.10.0.0/16
-    └── Application Subnet: 10.10.1.0/24
-        └── Network Security Group
+    ├── Application Subnet: 10.10.1.0/24
+    │   └── Network Security Group
+    └── Management Subnet: 10.10.2.0/24
 
-        Tools Used
+**Tools Used**
 Terraform
 Microsoft Azure
 Azure CLI
 Git
 GitHub
 Visual Studio Code
-How to Run
+
+**How to Run**
 terraform init
 terraform fmt
 terraform validate
 terraform plan
 terraform apply
-Verification
+
+**Verification**
 terraform state list
 terraform output
-Learning Outcomes
+
+**Learning Outcomes**
 Created Azure infrastructure using Terraform.
 Used Terraform state to track deployed resources.
 Used resource references to connect Azure resources.

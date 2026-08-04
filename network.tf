@@ -12,3 +12,10 @@ resource "azurerm_subnet" "application" {
   virtual_network_name = azurerm_virtual_network.main.name
   address_prefixes     = ["10.10.1.0/24"]
 }
+
+resource "azurerm_subnet" "management" {
+  name                 = "snet-management"
+  resource_group_name  = azurerm_resource_group.main.name
+  virtual_network_name = azurerm_virtual_network.main.name
+  address_prefixes     = ["10.10.2.0/24"]
+}
